@@ -106,7 +106,7 @@ body{background-color:var(--bg);background-image:radial-gradient(circle at 18px 
       <div class="card-head"><div><div class="card-title">Daily checklist</div><div class="card-sub">Chọn ngày, tick việc đã xong, chỉnh sửa hoặc tự thêm nhiệm vụ.</div></div><button class="btn primary" id="add-daily">＋ Add task</button></div>
       <div class="daybar"><button class="btn icon" id="prev-day">←</button><input type="date" id="selected-date"><button class="btn icon" id="next-day">→</button><button class="btn small" id="jump-today">Today</button><div style="flex:1"></div><span class="chip teal" id="selected-day-label"></span></div>
       <div class="day-summary" style="margin-top:13px" id="selected-summary"></div>
-      <div class="filters" style="margin:12px 0"><select id="daily-filter"><option value="all">All categories</option><option value="Application">Application</option><option value="Listening">Listening</option><option value="Speaking">Speaking</option><option value="Reading">Reading</option><option value="Writing">Writing</option><option value="Vocabulary">Vocabulary</option><option value="Review">Review</option><option value="Interview">Interview</option></select><select id="daily-status"><option value="all">All statuses</option><option value="todo">To do</option><option value="doing">In progress</option><option value="done">Completed</option></select></div>
+      <div class="filters" style="margin:12px 0"><select id="daily-filter"><option value="all">All categories</option><option value="Application">Application</option><option value="Listening">Listening</option><option value="Speaking">Speaking</option><option value="Reading">Reading</option><option value="Alumni">Alumni insights</option><option value="Writing">Writing</option><option value="Vocabulary">Vocabulary</option><option value="Review">Review</option><option value="Interview">Interview</option></select><select id="daily-status"><option value="all">All statuses</option><option value="todo">To do</option><option value="doing">In progress</option><option value="done">Completed</option></select></div>
       <div class="task-list" id="daily-tasks"></div>
     </div>
     <div class="section"><div class="section-head"><div><h2>Coming up</h2><p>Next seven days, based on your editable checklist.</p></div></div><div class="card"><div class="table-wrap"><table class="table"><thead><tr><th>Date</th><th>Focus</th><th>Tasks</th><th>Progress</th></tr></thead><tbody id="upcoming-table"></tbody></table></div></div></div>
@@ -114,8 +114,9 @@ body{background-color:var(--bg);background-image:radial-gradient(circle at 18px 
 
   <section class="view" id="view-milestones">
     <div class="card"><div class="card-head"><div><div class="card-title">Application roadmap</div><div class="card-sub">Một lộ trình chuẩn bị chủ động; phải điều chỉnh ngay khi có thông báo của Việt Nam.</div></div><span class="chip amber">Provisional timeline</span></div>
-      <div class="notice warn" style="margin-bottom:15px"><strong>Important:</strong> Không có căn cứ để khẳng định hạn nộp Global UGRAD Việt Nam là 15/12/2026. Đây chỉ là ngày mục tiêu nội bộ để hồ sơ sẵn sàng trước khi deadline thực tế được công bố.</div>
+      <div class="notice warn" style="margin-bottom:15px"><strong>Deadline mục tiêu: 15/12/2026 (do ứng viên cung cấp, chưa xác minh là deadline chính thức của Việt Nam).</strong> Lập kế hoạch hoàn thiện và kiểm tra hồ sơ trước 13–14/12 để chừa thời gian xử lý lỗi portal/tài liệu. Trang Apply chính thức hiện chưa xác nhận mốc này; hãy kiểm tra thông báo mới nhất và cập nhật mục “Official deadline” trong Settings khi có văn bản chính thức.</div>
       <div class="notice" style="margin-bottom:15px"><strong>What to demonstrate in your application:</strong> Global UGRAD là chương trình trao đổi học thuật phi bằng cấp một học kỳ, kết hợp học tập toàn thời gian, hoạt động cộng đồng và phát triển chuyên môn. Trang chương trình nêu các yếu tố tuyển chọn gồm tiềm năng lãnh đạo, triển vọng học thuật và sự tham gia cộng đồng. Hãy xây hồ sơ để chứng minh ba yếu tố này bằng trải nghiệm thật, không chỉ bằng lời tự nhận.</div>
+      <div class="notice" style="margin-bottom:15px"><strong>Alumni experience library — nguồn tham khảo ban đầu</strong><p>Đọc/xem để hiểu trải nghiệm thật; ghi URL, năm/cohort, 3 bài học và câu hỏi còn thiếu vào ô Evidence của task Alumni. Bài cũ chỉ là kinh nghiệm cá nhân, không đại diện quy định tuyển sinh năm 2026.</p><ul style="margin:8px 0 0 18px;line-height:1.8"><li><a href="https://vnugrad.wordpress.com/trang-chu/" target="_blank" rel="noopener">UGRADERS in Vietnam — chuỗi chia sẻ alumni</a></li><li><a href="https://vnugrad.wordpress.com/2018/11/07/global-ugrad-ky-2-chuan-bi-viet-luan-va-xin-thu-gioi-thieu/" target="_blank" rel="noopener">Kỳ 2: Chuẩn bị viết luận và xin thư giới thiệu (2018)</a></li><li><a href="https://vnugrad.wordpress.com/2019/11/25/global-ugrad-ky-5-kinh-nghiem-di-phong-van/" target="_blank" rel="noopener">Kỳ 5: Kinh nghiệm đi phỏng vấn (2019)</a></li><li><a href="https://ueb.edu.vn/Sinh-Vien-Hoc-Vien/UEB/TRAO-DOI-SINH-VIEN-QUOC-TE/hoc-bong-global-ugrad-hoa-ky-mot-trong-nhung-hoc-bong-%E2%80%9C hot”></a></li><li><a href="https://cafef.vn/khong-co-nguoi-huong-dan-nu-sinh-sinh-nam-2001-ung-tuyen-thanh-cong-hoc-bong-trao-doi-toan-phan-tai-my-20211101071834156.chn" target="_blank" rel="noopener">Alumni story: tự chuẩn bị hồ sơ và phỏng vấn (2021)</a></li><li><a href="https://borderless.so/stories/from-kyrgyzstan-to-studying-in-new-york-through-the-global-ugrad-program" target="_blank" rel="noopener">International alumni story: chuẩn bị sớm và kết nối alumni</a></li></ul></div>
       <div id="milestone-list"></div>
     </div>
     <div class="section"><div class="section-head"><div><h2>Readiness checklist</h2><p>Những hạng mục cốt lõi cần xác minh hoặc chuẩn bị. Tick khi đã có bằng chứng.</p></div><button class="btn small" id="reset-milestones">Reset checklist</button></div><div class="card"><div class="task-list" id="readiness-list"></div></div></div>
@@ -190,7 +191,7 @@ body{background-color:var(--bg);background-image:radial-gradient(circle at 18px 
   </section>
 
   <section class="view" id="view-sources">
-    <div class="card"><div class="card-head"><div><div class="card-title">Official sources & verification</div><div class="card-sub">Ưu tiên nguồn của Global UGRAD / World Learning / U.S. Embassy. Kiểm tra lại trước khi nộp.</div></div><span class="chip amber">Checked 03 Nov 2026</span></div>
+    <div class="card"><div class="card-head"><div><div class="card-title">Official sources & verification</div><div class="card-sub">Ưu tiên nguồn của Global UGRAD / World Learning / U.S. Embassy. Kiểm tra lại trước khi nộp.</div></div><span class="chip amber">Checked 06 Nov 2026</span></div>
       <div class="source-list">
         <div class="source"><div class="source-ico">↗</div><div><strong>Global UGRAD — Apply</strong><p>Trạng thái trang apply hiện hiển thị chu kỳ 2025–2026 đã đóng; chưa xác nhận deadline Việt Nam cho kỳ tiếp theo.</p><a href="https://www.globalugrad.org/apply/" target="_blank" rel="noopener">Open official Apply page ↗</a></div></div>
         <div class="source"><div class="source-ico">⌁</div><div><strong>Global UGRAD — Program Timeline</strong><p>Lịch chung: ứng tuyển tháng 11–12; phỏng vấn tháng 1–2; thông báo kết quả tháng 3–4. Chỉ dùng để lập kế hoạch, không thay deadline địa phương.</p><a href="https://www.globalugrad.org/program-timeline/" target="_blank" rel="noopener">Open program timeline ↗</a></div></div>
@@ -201,7 +202,7 @@ body{background-color:var(--bg);background-image:radial-gradient(circle at 18px 
     </div>
     <div class="section grid settings-grid">
       <div class="card"><div class="card-head"><div><div class="card-title">Plan settings</div><div class="card-sub">Điều chỉnh thời lượng cam kết và ngày mục tiêu nội bộ.</div></div></div>
-        <form id="settings-form" class="form-grid"><div class="field"><label>Weekly target (hours)</label><input type="number" name="weeklyHours" min="1" max="70" value="35"></div><div class="field"><label>Internal readiness target</label><input type="date" name="internalTarget" value="2026-12-15"></div><div class="field full"><label>Application deadline (official, if confirmed)</label><input type="date" name="officialDeadline"><small style="color:var(--muted)">Để trống cho tới khi có thông báo chính thức dành cho Việt Nam.</small></div><div class="field full"><button class="btn primary" type="submit">Save settings</button></div></form>
+        <form id="settings-form" class="form-grid"><div class="field"><label>Weekly target (hours)</label><input type="number" name="weeklyHours" min="1" max="70" value="35"></div><div class="field"><label>Target submission date (tentative)</label><input type="date" name="internalTarget" value="2026-12-15"></div><div class="field full"><label>Application deadline (official, if confirmed)</label><input type="date" name="officialDeadline"><small style="color:var(--muted)">Để trống cho tới khi có thông báo chính thức dành cho Việt Nam.</small></div><div class="field full"><button class="btn primary" type="submit">Save settings</button></div></form>
         <p class="card-sub">35h/tuần là giả định tạm thời: 30h/tuần đã nói trước đó + 5h/tuần tăng thêm.</p>
       </div>
       <div class="card"><div class="card-head"><div><div class="card-title">Backup & portability</div><div class="card-sub">Dữ liệu được lưu trong trình duyệt trên thiết bị này.</div></div></div><div class="notice warn" style="margin-bottom:12px">Không có đồng bộ đám mây tự động. Khi đổi máy/trình duyệt hoặc xóa dữ liệu web, hãy xuất file backup trước.</div><div class="backup-box"><button class="btn primary" id="export-json">⇩ Export backup</button><label class="btn" for="import-file">⇧ Import backup</label><input type="file" id="import-file" accept="application/json,.json" class="hidden"><button class="btn danger" id="reset-app">Reset app data</button></div><p class="card-sub" style="margin-top:13px">Website có thể chạy trực tiếp bằng trình duyệt. Muốn truy cập từ nhiều thiết bị cần đưa lên hosting và bổ sung lưu trữ cloud/database.</p></div>
@@ -213,7 +214,7 @@ body{background-color:var(--bg);background-image:radial-gradient(circle at 18px 
 
 <div class="modal-backdrop" id="task-modal"><div class="modal"><div class="modal-head"><h2 id="modal-title">Add a task</h2><button class="btn icon" id="close-modal">✕</button></div><form id="task-form"><input type="hidden" name="id"><div class="form-grid">
   <div class="field full"><label>Task title</label><input name="title" required maxlength="140" placeholder="What needs to be done?" /></div>
-  <div class="field"><label>Date</label><input name="date" type="date" required></div><div class="field"><label>Category</label><select name="category"><option>Application</option><option>Listening</option><option>Speaking</option><option>Reading</option><option>Writing</option><option>Vocabulary</option><option>Review</option><option>Interview</option><option>Admin</option></select></div>
+  <div class="field"><label>Date</label><input name="date" type="date" required></div><div class="field"><label>Category</label><select name="category"><option>Application</option><option>Listening</option><option>Speaking</option><option>Reading</option><option>Alumni</option><option>Writing</option><option>Vocabulary</option><option>Review</option><option>Interview</option><option>Admin</option></select></div>
   <div class="field"><label>Estimated minutes</label><input name="minutes" type="number" min="1" max="600" value="45" required></div><div class="field"><label>Priority</label><select name="priority"><option>High</option><option selected>Medium</option><option>Low</option></select></div>
   <div class="field"><label>Status</label><select name="status"><option value="todo">To do</option><option value="doing">In progress</option><option value="done">Completed</option></select></div><div class="field"><label>Actual minutes (optional)</label><input name="actual" type="number" min="0" max="600" placeholder="Same as estimate if blank" /></div>
   <div class="field full"><label>Instructions / definition of done</label><textarea name="detail" placeholder="Write a clear outcome, not just a vague activity..."></textarea></div><div class="field full"><label>Evidence / notes</label><textarea name="evidence" placeholder="Link, filename, recording, feedback, or what you learned..."></textarea></div>
@@ -223,10 +224,11 @@ body{background-color:var(--bg);background-image:radial-gradient(circle at 18px 
 (() => {
 'use strict';
 const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
-const START='2026-11-03', END='2027-01-31';
+const START='2026-11-06', END='2027-01-31';
 const TODAY=iso(new Date());
-const STORE='ugrad-studio-v1';
-const catEmoji={Application:'✦',Listening:'耳',Speaking:'◉',Reading:'▤',Writing:'✎',Vocabulary:'Aa',Review:'↻',Interview:'◎',Admin:'□'};
+const LEGACY_STORE='ugrad-studio-v1';
+const STORE='ugrad-studio-v2';
+const catEmoji={Application:'✦',Listening:'耳',Speaking:'◉',Reading:'▤',Alumni:'✿',Writing:'✎',Vocabulary:'Aa',Review:'↻',Interview:'◎',Admin:'□'};
 const skillPool={
 Listening:[
 ['Active listening: first pass','Dùng tài liệu nghe bạn đã có. Nghe một lượt không dừng; ghi lại ý chính, mục đích người nói và 5 chi tiết quan trọng.'],
@@ -261,10 +263,20 @@ Vocabulary:[
 ['Spaced repetition','Ôn từ mới theo SRS: hôm nay, từ hôm trước và nhóm từ đã học 1 tuần trước.'],
 ['Active vocabulary challenge','Dùng ít nhất 5 từ/cụm mới trong một đoạn viết hoặc câu trả lời nói.']
 ]};
+const alumniResearchPool=[
+['Alumni insight #1 — build your source bank','Tìm ít nhất 5 nguồn chia sẻ của Global UGRAD alumni (video, post, blog, phỏng vấn). Ưu tiên alumni Việt Nam; ghi tên người chia sẻ, cohort/năm, nền tảng, URL và ngày đăng. Không coi bài cũ là quy định hiện hành.'],
+['Alumni insight #2 — watch one experience video','Xem trọn một video/testimonial của alumni. Ghi 5 ý: họ bắt đầu chuẩn bị khi nào, cách chọn trải nghiệm, cách làm essay, cách xin recommendation, điều bất ngờ trong hành trình. Lưu URL trong Evidence.'],
+['Alumni insight #3 — read two alumni posts','Đọc ít nhất hai bài post/blog của alumni. So sánh điểm chung và khác nhau về hoạt động, leadership, community service, essay và interview; phân biệt trải nghiệm cá nhân với yêu cầu chính thức.'],
+['Alumni insight #4 — application lessons','Tìm một chia sẻ cụ thể về viết luận hoặc xin thư giới thiệu. Ghi 3 điều có thể áp dụng cho hồ sơ của bạn và 1 điều cần kiểm chứng từ nguồn chính thức.'],
+['Alumni insight #5 — interview reflections','Đọc/xem một chia sẻ về phỏng vấn Global UGRAD. Ghi dạng câu hỏi, cách alumni chuẩn bị, điều họ khuyên tránh và câu hỏi follow-up bạn muốn luyện.'],
+['Alumni insight #6 — compare Vietnam and international alumni','Tìm một chia sẻ từ alumni Việt Nam và một chia sẻ từ alumni quốc tế. So sánh chiến lược chuẩn bị; không mặc định quy trình các nước giống nhau.'],
+['Alumni insight #7 — turn learning into action','Tổng hợp ít nhất 8 nguồn alumni đã đọc/xem. Chọn 5 insight có ích nhất, 3 việc bạn sẽ làm, và 3 thông tin không được dùng thay cho hướng dẫn chính thức.']
+];
 const coreTasks=[
 ['Xác minh thông báo Global UGRAD Việt Nam','Kiểm tra Global UGRAD Apply, World Learning Vietnam và thông báo của U.S. Embassy. Lưu URL, ngày kiểm tra, kỳ tuyển sinh và deadline chính xác nếu đã công bố. Nếu chưa có, ghi “chưa xác minh”; không tự suy đoán.','High',55],
 ['Lập thư mục hồ sơ và bảng kiểm giấy tờ','Tạo thư mục gồm Official notice, Identity, Transcript, CV, Essays, Recommendations, Activities, Submission proof. Đặt tên file nhất quán và sao lưu cloud cá nhân.','High',45],
 ['Liên hệ alumni bạn đang quen','Nhắn xin 20–30 phút trao đổi về trải nghiệm apply, timeline thực tế, phần khó nhất, interview và lỗi thường gặp. Không nhờ viết luận.','High',45],
+['Lập danh sách ít nhất 8 nguồn chia sẻ alumni','Tìm video, bài post, blog và phỏng vấn của Global UGRAD alumni Việt Nam/quốc tế. Ghi cohort, link, nền tảng, ngày đăng và chủ đề. Ưu tiên nguồn kể trải nghiệm trực tiếp.','High',50],
 ['Tạo CV tiếng Anh bản 0.1','Liệt kê education, activities, project, leadership, volunteering, employment, awards và skills. Ghi kết quả/đóng góp định lượng nếu có bằng chứng.','High',75],
 ['Lập Story Bank cho cuộc thi tiếng Anh','Ghi vai trò, quy mô, đối tượng, mục tiêu, khó khăn, hành động cá nhân, kết quả, bằng chứng và bài học. Phân biệt việc mình làm với việc của cả đội.','High',60],
 ['Lập Story Bank cho dự án thiện nguyện','Ghi vấn đề cộng đồng, nhóm thụ hưởng, vai trò cụ thể, quy trình triển khai, kết quả có thể kiểm chứng và điều bạn học được.','High',60],
@@ -281,6 +293,7 @@ const coreTasks=[
 ['Brainstorm essay prompt / motivation','Khi chưa có prompt mới, viết câu trả lời tự do: Vì sao Global UGRAD? Vì sao thời điểm này? Bạn muốn học gì và mang về đóng góp gì?','High',75],
 ['Phác thảo essay về leadership / community','Chọn một câu chuyện có hành động cá nhân, trở ngại, kết quả và reflection. Không phóng đại vai trò hoặc số liệu.','High',75],
 ['Đọc và mổ xẻ 2 bài luận mẫu','Đọc bài mẫu từ nguồn đáng tin; phân tích hook, evidence, reflection, specificity và ending. Ghi điều học được, không copy phrases.','Medium',55],
+['Tổng hợp insight từ tối thiểu 8 chia sẻ alumni','Tóm tắt 5 bài học thực tế về hồ sơ, essay, recommendation hoặc interview; gắn link cho từng ý và đánh dấu nội dung nào cần xác minh lại với hướng dẫn kỳ 2026.','Medium',50],
 ['Viết essay draft 1','Viết bản nháp theo prompt chính thức nếu đã có; nếu chưa, tạo draft nền theo ý tưởng đã chọn. Kiểm tra mỗi đoạn có evidence và reflection.','High',90],
 ['Viết essay draft 2','Phát triển bài thứ hai với một góc nhìn bổ trợ, tránh lặp lại câu chuyện và luận điểm của essay 1.','High',90],
 ['Tự phản biện hai essay','Đánh dấu câu chung chung, claims thiếu bằng chứng, chỗ kể chuyện dài nhưng ít phân tích, và các điểm không trả lời prompt.','High',65],
@@ -302,7 +315,8 @@ const coreTasks=[
 ['Weekly review + điều chỉnh workload','Tổng kết tasks, giờ học thực tế, chất lượng ngủ/năng lượng, lịch học và buổi dạy/deadline. Dời task thay vì xóa âm thầm.','Medium',35]
 ];
 const readinessItems=[
-['Deadline và thông báo tuyển sinh Việt Nam được xác minh','Application'],['Eligibility được đối chiếu theo hướng dẫn kỳ mới','Application'],['Tài khoản portal và email đăng ký đã kiểm tra','Application'],['Bảng điểm tiếng Anh đã nhận và kiểm tra','Documents'],['CV tiếng Anh đã proofread','Documents'],['Essay 1 trả lời đúng prompt và có evidence','Essays'],['Essay 2 trả lời đúng prompt và không lặp ý','Essays'],['Hai người giới thiệu đã đồng ý và xác nhận cách nộp','Recommendations'],['Ảnh/ID và tài liệu bắt buộc đã chuẩn bị','Documents'],['Tất cả trường trong application form được kiểm tra','Application'],['Bản PDF / screenshot xác nhận nộp đơn được lưu','Submission'],['Email và portal được theo dõi sau khi nộp','Follow-up']
+['Deadline và thông báo tuyển sinh Việt Nam được xác minh','Application'],
+['Đã tổng hợp tối thiểu 8 chia sẻ alumni kèm link và bài học','Research'],['Eligibility được đối chiếu theo hướng dẫn kỳ mới','Application'],['Tài khoản portal và email đăng ký đã kiểm tra','Application'],['Bảng điểm tiếng Anh đã nhận và kiểm tra','Documents'],['CV tiếng Anh đã proofread','Documents'],['Essay 1 trả lời đúng prompt và có evidence','Essays'],['Essay 2 trả lời đúng prompt và không lặp ý','Essays'],['Hai người giới thiệu đã đồng ý và xác nhận cách nộp','Recommendations'],['Ảnh/ID và tài liệu bắt buộc đã chuẩn bị','Documents'],['Tất cả trường trong application form được kiểm tra','Application'],['Bản PDF / screenshot xác nhận nộp đơn được lưu','Submission'],['Email và portal được theo dõi sau khi nộp','Follow-up']
 ];
 const questions=[
 'Please introduce yourself and tell us about your academic interests.',
@@ -327,42 +341,65 @@ const questions=[
 'Is there anything else you would like the selection committee to know?'
 ];
 const defaultSettings={weeklyHours:35,internalTarget:'2026-12-15',officialDeadline:''};
-const defaultData={tasks:[],englishLogs:[],stories:[],mentors:[],essays:{p1:'',d1:'',p2:'',d2:''},interviewNotes:{},interviewDone:[],readiness:[],settings:{...defaultSettings},selectedDate:TODAY};
+const defaultData={tasks:[],englishLogs:[],stories:[],mentors:[],essays:{p1:'',d1:'',p2:'',d2:''},interviewNotes:{},interviewDone:[],readiness:[],settings:{...defaultSettings},selectedDate:TODAY,planVersion:2};
 let data=loadData();
-function loadData(){try{const s=JSON.parse(localStorage.getItem(STORE));return s?{...defaultData,...s,settings:{...defaultSettings,...s.settings}}:structuredClone(defaultData)}catch(e){return structuredClone(defaultData)}}
+function loadData(){
+ try{
+  const current=JSON.parse(localStorage.getItem(STORE));
+  if(current)return {...defaultData,...current,settings:{...defaultSettings,...current.settings}};
+  const legacy=JSON.parse(localStorage.getItem(LEGACY_STORE));
+  if(legacy)return {...defaultData,...legacy,tasks:[],readiness:[],selectedDate:TODAY,planVersion:2,settings:{...defaultSettings,...legacy.settings,internalTarget:'2026-12-15',officialDeadline:''}};
+  return structuredClone(defaultData);
+ }catch(e){return structuredClone(defaultData)}
+}
 function save(){localStorage.setItem(STORE,JSON.stringify(data));renderAll()}
 function iso(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}function parseISO(s){return new Date(s+'T12:00:00')}function addDays(s,n){const d=parseISO(s);d.setDate(d.getDate()+n);return iso(d)}function fmt(s,opts={day:'2-digit',month:'short',year:'numeric'}){return parseISO(s).toLocaleDateString('vi-VN',opts)}function dayName(s){return parseISO(s).toLocaleDateString('vi-VN',{weekday:'short'})}function esc(s=''){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2400)}function uid(){return 't'+Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
 function pick(arr,i){return arr[i%arr.length]}
 function task(date,category,title,detail,minutes=45,priority='Medium'){return {id:uid(),date,category,title,detail,minutes,priority,status:'todo',actual:'',evidence:''}}
-function buildSeed(){if(data.tasks.length)return;let day=START;let i=0;while(day<=END){const dow=parseISO(day).getDay();const coreIdx=Math.min(coreTasks.length-1,Math.floor(i*coreTasks.length/90));const c=coreTasks[coreIdx];
-  // Daily main application task, with a light admin/review day every Sunday.
-  if(dow===0){data.tasks.push(task(day,'Review','Weekly review & reset','Tổng kết 7 ngày: tasks hoàn thành, giờ học thật, feedback, năng lượng và lịch học tuần mới. Chọn 3 ưu tiên tuần tới.',45,'High'));}
-  data.tasks.push(task(day,'Application',c[0],c[1],c[3],c[2]));
-  // Five daily learning streams with rotating practice modes.
-  ['Listening','Speaking','Writing','Reading','Vocabulary'].forEach((cat,j)=>{const [title,detail]=pick(skillPool[cat],i+j);let mins={Listening:45,Speaking:45,Writing:50,Reading:35,Vocabulary:25}[cat];if(dow===0)mins=Math.round(mins*.65);data.tasks.push(task(day,cat,title,detail,mins,cat==='Writing'||cat==='Speaking'?'High':'Medium'));});
-  // A short daily scan keeps the user aware of new notices and messages; it does not scrape or monitor websites automatically.
+function buildSeed(){if(data.tasks.length)return;let day=START;let i=0;const sprintEnd=defaultSettings.internalTarget;
+ while(day<=END){
+  const dow=parseISO(day).getDay();
+  const inApplicationSprint=day<=sprintEnd;
+  const c=inApplicationSprint?coreTasks[Math.min(coreTasks.length-1,Math.floor(i*coreTasks.length/40))]:null;
+  if(dow===0)data.tasks.push(task(day,'Review','Weekly review & reset','Tổng kết 7 ngày: số việc hoàn thành, giờ học thực tế, insight alumni đã ghi lại, feedback, năng lượng và lịch học tuần mới. Chọn 3 ưu tiên tuần tới.',45,'High'));
+  if(c)data.tasks.push(task(day,'Application',c[0],c[1],c[3],c[2]));
+  else{
+   const followUps=[
+    ['Post-submission: check portal and email','Kiểm tra inbox, spam và application portal; lưu confirmation/application ID nếu đã nộp; ghi lại mọi yêu cầu bổ sung. Không gửi lại hồ sơ nếu chưa được yêu cầu.','Application',20],
+    ['Interview preparation: answer with evidence','Chọn một câu trong Interview Prep; trả lời 2 phút bằng trải nghiệm thật, ghi âm và tự đánh giá relevance, evidence, reflection, clarity.','Interview',45],
+    ['Interview preparation: follow-up questions','Tập 3 câu hỏi follow-up dựa trên CV/essay; tránh học thuộc, luyện trả lời tự nhiên và nhất quán.','Interview',40],
+    ['Alumni interview lessons review','Ôn lại ghi chú alumni về phỏng vấn; chọn một lời khuyên còn phù hợp và biến thành bài tập luyện cụ thể.','Alumni',30],
+    ['Prepare a concise application story bank','Ôn 3 câu chuyện leadership, community service và challenge; đảm bảo từng câu có hành động cá nhân và kết quả thật.','Interview',40]
+   ];const p=pick(followUps,i);data.tasks.push(task(day,p[2],p[0],p[1],p[3],'Medium'));
+  }
+  ['Listening','Speaking','Writing','Reading','Vocabulary'].forEach((cat,j)=>{
+   const alumniDay=inApplicationSprint&&cat==='Reading'&&[2,4,6].includes(dow);
+   if(alumniDay){const [title,detail]=pick(alumniResearchPool,Math.floor(i/3));data.tasks.push(task(day,'Alumni',title,detail,30,'Medium'));return;}
+   const [title,detail]=pick(skillPool[cat],i+j);let mins={Listening:45,Speaking:45,Writing:50,Reading:35,Vocabulary:25}[cat];
+   if(dow===0)mins=Math.round(mins*.65);
+   if(!inApplicationSprint)mins=Math.round(mins*.65);
+   data.tasks.push(task(day,cat,title,detail,mins,cat==='Writing'||cat==='Speaking'?'High':'Medium'));
+  });
   data.tasks.push(task(day,'Application','Daily deadline & inbox check','Mở trang Apply, Vietnam country page và kênh thông báo của U.S. Embassy/Fulbright; kiểm tra inbox, spam và portal. Ghi “no update” hoặc cập nhật deadline nếu có thông báo mới.',10,'High'));
-  // A short second focus block helps reach the 35-hour weekly commitment without fixing evening slots.
-  data.tasks.push(task(day,'Application','Focused application work block','Dành một phiên tập trung không bị gián đoạn để tiếp tục output quan trọng nhất trong ngày: CV, minh chứng, essay, recommender pack hoặc application form. Ghi lại phần đã hoàn thành.',dow===0?20:35,'Medium'));
-  // Every 3rd day: a dedicated admin/pipeline task from the middle of the core list.
-  if(i%3===1){const extras=[
+  data.tasks.push(task(day,'Application',inApplicationSprint?'Focused application work block':'Post-submission follow-up / interview block',inApplicationSprint?'Dành một phiên tập trung để hoàn thành output quan trọng nhất: CV, minh chứng, essay, recommender pack hoặc application form. Ghi lại phần đã hoàn thành.':'Dành một phiên ngắn để theo dõi hồ sơ, chuẩn bị phỏng vấn hoặc cập nhật câu chuyện cá nhân. Điều chỉnh thời lượng theo thông báo thực tế.',inApplicationSprint?(dow===0?20:35):25,'Medium'));
+  if(inApplicationSprint&&i%3===1){const extras=[
     ['Follow up on transcript / document request','Kiểm tra tiến độ bảng điểm tiếng Anh; nếu đã nhận, đối chiếu họ tên, GPA, grading scale và scan. Nếu chưa, hỏi ngày dự kiến nhận.',25],
     ['Mentor / alumni outreach','Liên hệ alumni hoặc mentor; gửi câu hỏi ngắn, chuẩn bị context và follow-up lịch sự nếu chưa nhận phản hồi.',30],
     ['Recommender pipeline check','Cập nhật trạng thái giảng viên/người hướng dẫn; xác nhận họ có đủ thông tin và thời gian hỗ trợ.',25],
     ['Application source check','Kiểm tra lại Apply page, Vietnam country page và kênh U.S. Embassy/Fulbright. Lưu ngày kiểm tra và thay đổi mới.',20],
     ['Update evidence folder','Đưa certificate, photos, event materials, reports hoặc links vào thư mục minh chứng; đặt tên file rõ ràng.',30]
-  ];const e=pick(extras,Math.floor(i/3));data.tasks.push(task(day,'Admin',e[0],e[1],e[2],'Medium'));}
+   ];const e=pick(extras,Math.floor(i/3));data.tasks.push(task(day,'Admin',e[0],e[1],e[2],'Medium'));}
   day=addDays(day,1);i++;
  }
 }
 buildSeed();
 const phases=[
-['01','Nov 03–09','Verify & build foundations','Xác minh kỳ tuyển sinh Việt Nam; mở thư mục hồ sơ; bắt đầu CV, Story Bank; liên hệ alumni và yêu cầu bảng điểm.'],
-['02','Nov 10–23','Build a credible profile','Hoàn thiện CV, thu thập minh chứng, xin recommender, phát triển ý tưởng và hai bản nháp essay.'],
-['03','Nov 24–Dec 15','Polish & submit-ready','Phản biện essay, hoàn thiện form/documents, rà soát portal. 15/12 chỉ là mục tiêu nội bộ, không phải hạn chính thức.'],
-['04','Dec 16–Jan 04','Follow-up & interview foundations','Theo dõi email/portal, cập nhật hồ sơ nếu được yêu cầu; xây câu trả lời phỏng vấn có bằng chứng.'],
-['05','Jan 05–18','Interview practice','Mock interviews, câu hỏi follow-up, clarity, examples, U.S. study goals và return impact.'],
-['06','Jan 19–31','Final preparation & adaptability','Tiếp tục luyện phỏng vấn theo thông báo thực tế; chuẩn bị lịch, tài liệu và kịch bản thay đổi deadline.']
+['01','Nov 06–08','Start now: verify & organize','Xác minh thông báo Việt Nam; đọc hướng dẫn chính thức; kiểm tra inbox/portal; mở thư mục hồ sơ; liên hệ alumni quen và lập danh sách nguồn chia sẻ alumni.'],
+['02','Nov 09–15','Build your evidence base','Tạo CV 0.1, Story Bank cho cuộc thi tiếng Anh và dự án thiện nguyện; xin bảng điểm tiếng Anh; tiếp cận hai người giới thiệu; đọc/xem alumni stories theo lịch.'],
+['03','Nov 16–22','Essay development','Chốt luận điểm hai bài luận theo prompt đang có; viết bản nháp; phân tích bài mẫu; tổng hợp ít nhất 8 nguồn alumni và chuyển insight thành việc làm cụ thể.'],
+['04','Nov 23–Dec 05','Revise & complete application','Xin phản biện, sửa essay, hoàn thiện CV, tài liệu và recommender pack; kiểm tra từng trường trong portal.'],
+['05','Dec 06–15','Final QA & submit','Hoàn tất nội dung trước 12–13/12; rà soát file, giới hạn từ và xác nhận người giới thiệu; nộp sớm nếu portal mở và yêu cầu đã xác minh. 15/12 là mốc mục tiêu dự phòng do bạn cung cấp.'],
+['06','Dec 16–Jan 31','Follow-up & interview readiness','Theo dõi email/portal, giữ bằng chứng nộp đơn; luyện phỏng vấn theo timeline địa phương và thông báo thực tế.']
 ];
 function tasksFor(date){return data.tasks.filter(t=>t.date===date).sort((a,b)=>priorityScore(b.priority)-priorityScore(a.priority)||catOrder(a.category)-catOrder(b.category))}function priorityScore(p){return p==='High'?3:p==='Medium'?2:1}function catOrder(c){return ['Application','Admin','Interview','Listening','Speaking','Writing','Reading','Vocabulary','Review'].indexOf(c)}function doneTasks(ts){return ts.filter(t=>t.status==='done').length}function minutesDone(ts){return ts.filter(t=>t.status==='done').reduce((a,t)=>a+Number(t.actual!==''?t.actual:t.minutes||0),0)}
 function weekStart(s){const d=parseISO(s);const wd=(d.getDay()+6)%7;d.setDate(d.getDate()-wd);return iso(d)}function weekTasks(s){const start=weekStart(s),end=addDays(start,6);return data.tasks.filter(t=>t.date>=start&&t.date<=end)}function dateTasksLabel(ts){return `${doneTasks(ts)}/${ts.length} done`}
@@ -379,7 +416,7 @@ function renderDashboard(){const today=TODAY;const allDone=doneTasks(data.tasks)
 }
 function renderDaily(){const d=$('#selected-date').value||data.selectedDate||TODAY;data.selectedDate=d;$('#selected-day-label').textContent=fmt(d,{weekday:'long',day:'numeric',month:'long'});let ts=tasksFor(d);const cf=$('#daily-filter').value,sf=$('#daily-status').value;if(cf!=='all')ts=ts.filter(t=>t.category===cf);if(sf!=='all')ts=ts.filter(t=>t.status===sf);const all=tasksFor(d);$('#selected-summary').innerHTML=`<span class="chip teal">${dateTasksLabel(all)}</span><span class="chip">${(all.reduce((a,x)=>a+Number(x.minutes||0),0)/60).toFixed(1)} planned h</span><span class="chip">${(minutesDone(all)/60).toFixed(1)} actual h logged</span>`;$('#daily-tasks').innerHTML=ts.length?ts.map(taskHtml).join(''):'<div class="empty"><strong>No task matches this filter.</strong>Add a task or change the filter.</div>';bindTaskActions($('#daily-tasks'));const rows=[];for(let i=0;i<7;i++){const date=addDays(d,i),t=tasksFor(date);const cats=[...new Set(t.map(x=>x.category))].slice(0,4).join(' · ');rows.push(`<tr><td><strong>${fmt(date,{weekday:'short',day:'numeric',month:'short'})}</strong></td><td>${esc(cats||'—')}</td><td>${t.length}</td><td><span class="chip ${doneTasks(t)===t.length?'teal':''}">${dateTasksLabel(t)}</span></td></tr>`)}$('#upcoming-table').innerHTML=rows.join('')}
 $('#selected-date').value=data.selectedDate||TODAY;$('#selected-date').addEventListener('change',()=>{data.selectedDate=$('#selected-date').value;renderDaily()});$('#prev-day').addEventListener('click',()=>moveDay(-1));$('#next-day').addEventListener('click',()=>moveDay(1));$('#jump-today').addEventListener('click',()=>{$('#selected-date').value=TODAY;data.selectedDate=TODAY;renderDaily()});function moveDay(n){$('#selected-date').value=addDays($('#selected-date').value,n);data.selectedDate=$('#selected-date').value;renderDaily()}$('#daily-filter').addEventListener('change',renderDaily);$('#daily-status').addEventListener('change',renderDaily);
-function renderMilestones(){let html='';const items=[['03–09 Nov','Build foundations','Verify country-specific notice, gather documents, request transcript, create CV and story bank.'],['10–23 Nov','Profile + essay development','Develop stories, confirm recommenders, brainstorm and draft essays, review samples critically.'],['24 Nov–15 Dec','Submission-ready target','Revise, proofread, verify portal and all uploads. Internal target only; submit against actual official date.'],['16 Dec–04 Jan','Follow-up','Check portal and email, respond to clarifications, continue interview preparation.'],['05–18 Jan','Interview practice','Record mock interviews, practice follow-up questions and concrete examples.'],['19–31 Jan','Interview window preparation','Stay flexible for any locally announced interview schedule; keep English practice going.']];items.forEach((x,i)=>html+=`<div class="milestone"><strong>${x[0]} · ${x[1]}</strong><p>${x[2]}</p></div>`);$('#milestone-list').innerHTML=html;$('#readiness-list').innerHTML=readinessItems.map((x,i)=>`<div class="task"><input class="task-check" type="checkbox" data-ready="${i}" ${data.readiness[i]?'checked':''}><div class="task-main"><div class="task-title">${esc(x[0])}</div><div class="task-detail">${esc(x[1])} · Tick only when completed and evidence is available.</div></div></div>`).join('');$('#readiness-list').querySelectorAll('[data-ready]').forEach(el=>el.addEventListener('change',()=>{data.readiness[Number(el.dataset.ready)]=el.checked;save()}))}
+function renderMilestones(){let html='';const items=[['06–08 Nov','Start now & verify','Xác minh nguồn tuyển sinh Việt Nam, deadline, portal và email; tổ chức thư mục; bắt đầu liên hệ alumni và tìm nguồn chia sẻ.'],['09–15 Nov','Build profile evidence','CV, Story Bank, bảng điểm tiếng Anh, hai người giới thiệu; đọc/xem và lưu insight từ alumni.'],['16–22 Nov','Essay + alumni insight','Viết hai bản nháp, phân tích bài mẫu, tổng hợp ít nhất 8 chia sẻ alumni và xin feedback.'],['23 Nov–05 Dec','Revise & complete application','Sửa essay, CV, recommender pack, minh chứng và đối chiếu portal.'],['06–15 Dec','Final QA & submit','Hoàn tất kiểm tra trước 13–14/12; 15/12 là deadline mục tiêu do bạn cung cấp, chưa phải ngày chính thức đã xác minh.'],['16 Dec–31 Jan','Follow-up & interview','Theo dõi portal/email và luyện phỏng vấn theo thông báo thực tế.']];items.forEach((x,i)=>html+=`<div class="milestone"><strong>${x[0]} · ${x[1]}</strong><p>${x[2]}</p></div>`);$('#milestone-list').innerHTML=html;$('#readiness-list').innerHTML=readinessItems.map((x,i)=>`<div class="task"><input class="task-check" type="checkbox" data-ready="${i}" ${data.readiness[i]?'checked':''}><div class="task-main"><div class="task-title">${esc(x[0])}</div><div class="task-detail">${esc(x[1])} · Tick only when completed and evidence is available.</div></div></div>`).join('');$('#readiness-list').querySelectorAll('[data-ready]').forEach(el=>el.addEventListener('change',()=>{data.readiness[Number(el.dataset.ready)]=el.checked;save()}))}
 $('#reset-milestones').addEventListener('click',()=>{if(confirm('Reset all readiness checkboxes?')){data.readiness=[];save();toast('Readiness checklist reset')}});
 function renderEnglish(){const skills=['Listening','Speaking','Writing','Reading','Vocabulary'];const from=addDays(TODAY,-6);const logs=data.englishLogs.filter(x=>x.date>=from&&x.date<=TODAY);const totals=skills.map(s=>[s,logs.filter(l=>l.skill===s).reduce((a,l)=>a+Number(l.minutes||0),0)]);const max=Math.max(1,...totals.map(x=>x[1]));$('#english-bars').innerHTML=totals.map(x=>`<div class="bar-row"><div class="bar-label">${x[0]}</div><div class="bar-track"><div class="bar-fill" style="width:${x[1]/max*100}%"></div></div><div class="bar-val">${x[1]}m</div></div>`).join('');$('#english-history').innerHTML=data.englishLogs.slice().sort((a,b)=>b.date.localeCompare(a.date)).slice(0,35).map(l=>`<tr><td>${fmt(l.date,{day:'numeric',month:'short'})}</td><td><span class="chip teal">${esc(l.skill)}</span></td><td>${l.minutes} min</td><td>${esc(l.note||'—')}</td><td><button class="btn small danger" data-logdel="${l.id}">Delete</button></td></tr>`).join('')||'<tr><td colspan="5" class="card-sub">No study sessions logged yet.</td></tr>';$('#english-history').querySelectorAll('[data-logdel]').forEach(b=>b.addEventListener('click',()=>{data.englishLogs=data.englishLogs.filter(x=>x.id!==b.dataset.logdel);save()}))}
 $('#english-form').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);data.englishLogs.push({id:uid(),date:f.get('date'),skill:f.get('skill'),minutes:Number(f.get('minutes')),note:f.get('note')});e.target.reset();e.target.elements.date.value=TODAY;save();toast('Study session saved')});$('#english-form').elements.date.value=TODAY;
